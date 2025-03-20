@@ -1,0 +1,54 @@
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover; //Para cobrir toda largura
+    position: relative; // Position relative é para prender o elemento com posição absolute e não ocupar toda a tela no overlay.
+
+    .container {
+        position: relative; //Para sobrepor ao elemento com position absolute.
+    }
+
+    //Criar uma overlay, colocar um elemento por cima. (cor preta com opacidade baixa)
+    &::before {
+        position: absolute; //posição fixa
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: ''; //Para o elemento estar por cima ele precisa de um conteudo mesmo que seja um content vazio.
+        opacity: .7; //Diminuir a opacidade da cor Black
+    }
+
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        color: #fff;
+        font-weight: 800;
+        text-align: center; //Centralizar o texto
+    }
+
+    &__logo {
+        margin: 0 auto;
+        height: 80px;
+        display: block; //para centralizar o logo
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__logo {
+            height: 40px;
+        }
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+}
