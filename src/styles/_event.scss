@@ -43,6 +43,9 @@
         }
 
         &__description {
+            background-image: linear-gradient(yellow, white); // Text gradient - Por o gradiente
+            background-clip: text; // Text gradient - Para retirar o fundo gradiente do texto
+            color: transparent; // Text gradient - Retirar o color text e deixar amostra o gradiente.
             font-size: 16px; //Nota: por padrão a Tag Body já tem o font-size 16px, então essa regra poderia ser descartado.
             line-height: 22px;
         }
