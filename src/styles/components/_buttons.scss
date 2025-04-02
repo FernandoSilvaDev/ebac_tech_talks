@@ -7,19 +7,22 @@
     text-decoration: none;
     text-align: center;
     white-space: nowrap; //O 'Nowrap' vai força os elementos ficar na mesma linha
+    border-radius: 20px;
 
     &--primary {
         color: variables.$textColor;
         background: variables.$purple;
     }
+    @media (max-width: 1024px) {
+        display: flex;  //Para habilitar o Align-items
+        align-items: center; //Para centralizar o texto do botão
+        font-size: 12px;
+    }
 
     @media (max-width: 640px) {
         display: block; //Para que o elemento fique isolado
         width: 100%;
+        font-size: 12px;
     }
 
-    @media (max-width: 1024px) {
-        display: flex;  //Para habilitar o Align-items
-        align-items: center; //Para centralizar o texto do botão
-    }
 }

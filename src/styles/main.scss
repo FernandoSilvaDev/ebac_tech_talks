@@ -3,29 +3,31 @@
 @use 'components/buttons';
 @use 'event';
 @use 'variables';
+@use 'rodape';
 
 //Reset
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    font-family: "Playwrite US Trad", Roboto, sans-serif;
     color: variables.$textColor;
     list-style: none;
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-
-    //Cellphone
-    @media (max-width: 640px) {
-        max-width: 80%;
-    }
-
+    
     //Tablet
     @media (max-width: 1024px) {
         max-width: 90%;
     }
+    
+    //Cellphone
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+    
 }

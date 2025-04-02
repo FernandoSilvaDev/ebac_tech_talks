@@ -9,82 +9,94 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link id="link" rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
+            <img class="hero__logo" src="./images/Rapaz_festejando.png" alt="Caricatura">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil <span id="expirado" >começa em</span> <br> <span id="contador"></span>
+                Minha festa de aniversário <span id="expirado" >começa em</span> <br> <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
                     <li class="infos-bar__infos__item">
-                        <b>Localização</b>
-                        Allianz Parque - Barra Funda - São Paulo
+                        <b>Onde?</b>
+                        Rua das Palmas n° 5, Lar das Primas - SP
                     </li>
                     <li class="infos-bar__infos__item">
-                        <b>Preço</b>
-                        A partir de R$120,00
-                    </li>
-                    <li class="infos-bar__infos__item">
-                        <b>Quando</b>
-                        22/12/2025 às 16hs
+                        <b>Quando?</b>
+                        03/03/2026 às 14hs
                     </li>
                 </ul>
                 <a href="#" class="button button--primary">
-                    Garanta sua vaga
+                    Confirme seu nome na lista!
                 </a>
+            </div>
+            <div class="chamada">
+                <p class="chamada__text">
+                    ↓ Confira as atrações da festa! ↓
+                </p>
             </div>
         </div>
     </header>
 
-    <section class="event event--frontend">
-        <div class="container" data-aos="fade-right">
+    <section class="event event--videogames">
+        <div class="container" data-aos="flip-right">
             <div class="event__detail">
-                <h2 class="event__detail__title">Front-end</h2>
+                <h2 class="event__detail__title">Video Games</h2>
                 <p class="event__detail__description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus ex iste, debitis quod amet laboriosam molestias inventore earum consequatur, eveniet aliquam alias aut eos culpa soluta sed magnam numquam odit?
+                    As estações de jogos são equipadas com consoles e PCs de última geração, apresentando uma variedade de títulos que capturam a atenção de jogadores experientes. Desde épicos de mundo aberto, como The Witcher 3 e Elden Ring, até intensos jogos multiplayer competitivos, como Call of Duty ou League of Legends, há algo para todos os estilos. Os mais aventureiros podem explorar experiências imersivas de realidade virtual, mergulhando em universos fascinantes com gráficos de tirar o fôlego.
                 </p>
             </div>
-            <img class="event__image" src="./images/frontend.png" alt="Front-end">
+            <img class="event__image" src="./images/Games.jpg" alt="Video-Games">
         </div>
     </section>
-    <section class="event event--ui-ux event--image-left">
-        <div class="container" data-aos="fade-left">
+    <section class="event event--boardgames event--image-left">
+        <div class="container" data-aos="flip-left">
             <div class="event__detail">
-                <h2 class="event__detail__title">UI/UX</h2>
+                <h2 class="event__detail__title">Board Games</h2>
                 <p class="event__detail__description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus ex iste, debitis quod amet laboriosam molestias inventore earum consequatur, eveniet aliquam alias aut eos culpa soluta sed magnam numquam odit?
+                    A área de jogos de tabuleiro é projetada com mesas elegantes e confortáveis, perfeita para longas partidas de jogos estratégicos e envolventes. Opções como Terraforming Mars ou Scythe desafiam as mentes mais analíticas, enquanto jogos cooperativos, como Pandemic, fomentam o trabalho em equipe. Para momentos de descontração e risadas, títulos como Dixit ou Cards Against Humanity são ideais, com suas dinâmicas leves e criativas.
                 </p>
             </div>
-            <img class="event__image" src="./images/ui-ux.png" alt="Front-end">
+            <img class="event__image" src="./images/Boar_game.jpeg" alt="Board-games">
         </div>
     </section>
-    <section class="event event--data-science">
-        <div class="container" data-aos="fade-right">
+    <section class="event event--bebidas">
+        <div class="container" data-aos="flip-right">
             <div class="event__detail">
-                <h2 class="event__detail__title">Data Science</h2>
+                <h2 class="event__detail__title">Open Bar com chopps e drinks</h2>
                 <p class="event__detail__description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus ex iste, debitis quod amet laboriosam molestias inventore earum consequatur, eveniet aliquam alias aut eos culpa soluta sed magnam numquam odit?
+                    Um open bar repleto de chope gelado e drinks irresistíveis, oferecendo uma experiência única para quem aprecia boa bebida e um ambiente descontraído.
+                    A variedade de chopes inclui opções artesanais e tradicionais, com sabores e estilos que agradam tanto aos paladares clássicos quanto aos mais aventureiros. Desde um lager leve até um IPA robusto e aromático, cada chope é servido na temperatura perfeita.
+                    Para quem prefere drinks, o bar conta com mixologistas talentosos, preparados para criar desde clássicos como Mojito, Margarita e Negroni, até coquetéis exclusivos cheios de criatividade. Há opções que combinam frutas tropicais, ervas frescas, especiarias e destilados premium, garantindo uma explosão de sabores em cada gole.
                 </p>
             </div>
-            <img class="event__image" src="./images/data.png" alt="Front-end">
+            <img class="event__image" src="./images/Chopp_Drinks.png" alt="Chopp-Drinks">
         </div>
     </section>
-    <section class="event event--backend event--image-left">
-        <div class="container" data-aos="fade-left">
+    <section class="event event--banda event--image-left">
+        <div class="container" data-aos="flip-left">
             <div class="event__detail">
-                <h2 class="event__detail__title">Back-end</h2>
+                <h2 class="event__detail__title">Banda ao vivo</h2>
                 <p class="event__detail__description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus ex iste, debitis quod amet laboriosam molestias inventore earum consequatur, eveniet aliquam alias aut eos culpa soluta sed magnam numquam odit?
+                    Imagine um ambiente pulsante e cheio de energia, onde a música ao vivo se torna a protagonista de momentos inesquecíveis. Este espaço é palco para bandas talentosas, trazendo performances autênticas e vibrantes que conectam o público ao ritmo e emoção de cada nota.
+                    O palco é o coração da atração, equipado com iluminação dinâmica e som de alta qualidade, criando uma experiência sonora e visual imersiva. O repertório musical é diversificado, abrangendo desde os clássicos do rock, pop e blues até músicas autorais e hits contemporâneos, garantindo algo para todos os gostos.
                 </p>
             </div>
-            <img class="event__image" src="./images/backend.png" alt="Front-end">
+            <img class="event__image" src="./images/Banda.jpg" alt="Banda">
         </div>
     </section>
+    <footer class="rodape">
+        <div class="container">
+            <p>
+                Não deixe de comparecer e celebrar junto comigo esse dia especial.
+            </p>
+        </div>
+    </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
